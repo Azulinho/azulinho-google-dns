@@ -1,0 +1,9 @@
+#
+#	Ansible inventory file for: vagrant
+#
+
+[GoogleDNS_servers]
+AzulinhoGoogleDNS group=GoogleDNS_servers deploy_env=vagrant
+
+[vagrant:children]
+GoogleDNS_servers

@@ -1,0 +1,12 @@
+---
+- hosts: GoogleDNS_servers
+  max_fail_percentage: 1
+  serial: 1
+  accelerate: false
+  sudo: true
+
+
+  roles:
+    # configure /etc/resolv.conf
+    - google-dns
+
